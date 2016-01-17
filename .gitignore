@@ -338,3 +338,4 @@ _Pvt_Extensions
  # Personal Adds
 node_modules/.bin/gulp
 node_modules/*
+angular.directives/app/all.min.js
