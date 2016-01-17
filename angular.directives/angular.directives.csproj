@@ -57,6 +57,23 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\vendor.min.js" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\toastr.less" />
+    <Content Include="Content\toastr.scss" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="gulpfile.js" />
+    <Content Include="index.html" />
+    <Content Include="package.json" />
+    <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -65,6 +82,43 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\admin\admin.html" />
+    <Content Include="app\admin\admin.js" />
+    <Content Include="app\all.min.js" />
+    <Content Include="app\app.js" />
+    <Content Include="app\common\bootstrap\bootstrap.dialog.js" />
+    <Content Include="app\common\common.js" />
+    <Content Include="app\common\logger.js" />
+    <Content Include="app\common\spinner.js" />
+    <Content Include="app\config.exceptionHandler.js" />
+    <Content Include="app\config.js" />
+    <Content Include="app\config.route.js" />
+    <Content Include="app\dashboard\dashboard.html" />
+    <Content Include="app\dashboard\dashboard.js" />
+    <Content Include="app\layout\shell.html" />
+    <Content Include="app\layout\shell.js" />
+    <Content Include="app\layout\sidebar.html" />
+    <Content Include="app\layout\sidebar.js" />
+    <Content Include="app\layout\topnav.html" />
+    <Content Include="app\layout\widgetheader.html" />
+    <Content Include="app\services\datacontext.js" />
+    <Content Include="app\services\directives.js" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\customtheme.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\ie10mobile.css" />
+    <Content Include="Content\images\AngularJS-small.png" />
+    <Content Include="Content\images\breezelogo.png" />
+    <Content Include="Content\images\icon.png" />
+    <Content Include="Content\styles.css" />
+    <Content Include="Content\toastr.css" />
+    <Content Include="Content\toastr.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
