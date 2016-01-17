@@ -1,0 +1,64 @@
+﻿<section class="mainbar" data-ng-controller="triplet as vm">
+    <form class="form-horizontal">
+    <section class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="widget wviolet">
+                    <div data-cc-widget-header title="{{vm.title}}"></div>
+                    <div class="widget-content user">
+                         
+                        <div class="row" ng-repeat="element in vm.costElements.elements">
+                            <div class="col-lg-2">
+                                <input type="text" ng-model="element.nomen" />
+                            </div>
+                            <div class="col-lg-10">
+                                <div class="pull-left" ng-repeat="year in element.yearValues">
+                                    <div class="row">
+
+                                        <label class="control-label col-lg-4">Unit Cost:</label>
+
+                                        <div class="col-lg-4">
+                                            <input type="text" ng-model="year.uc" ng-model-options='{ debounce: 1000 }' ng-change="vm.performCalculation()" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+
+                                        <label class="control-label col-lg-4">Quantity:</label>
+                                        <div class="col-lg-4">
+                                            <input type="text" ng-model="year.qty" ng-change="vm.performCalculation()" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <label class="control-label col-lg-4">Total Cost:</label>
+                                        <div class="col-lg-4">
+                                            <input type="text" ng-model="year.tc" ng-change="vm.performCalculation()" />
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <label>Quantity:</label>
+                                <div class="col-lg-5">
+                                    <input type="text" ng-model="vm.qty" ng-change="vm.performCalculation()" />
+                                </div>
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <label>Total Cost:</label>
+                                <input type="text" ng-model="vm.tc" ng-change="vm.performCalculation()" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-foot">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        </form>
+</section>

@@ -33,16 +33,16 @@ gulp.task('clean', function () {
 gulp.task('scripts', ['clean'], function () {
 
     return gulp.src(config.src)
-      .pipe(uglify())
+      //.pipe(uglify())
       .pipe(concat('all.min.js'))
       .pipe(gulp.dest('app/'));
 });
-gulp.task('vendor', ['clean'], function () {
+gulp.task('vendor', [], function () {
 
-    return gulp.src(config.vendor)
-      .pipe(uglify())
-      .pipe(concat('vendor.min.js'))
-      .pipe(gulp.dest('app/'));
+    //return gulp.src(config.vendor)
+    //  .pipe(uglify())
+    //  .pipe(concat('vendor.min.js'))
+    //  .pipe(gulp.dest('app/'));
 });
 
 //Set a default tasks
