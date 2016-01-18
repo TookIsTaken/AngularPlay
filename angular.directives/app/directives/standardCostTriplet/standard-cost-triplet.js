@@ -9,26 +9,30 @@
                 uc: '=',
                 qty: '=',
                 tc: '=',
-                autoCalcOption: '@autoCalculationOption'
+                autoCalcOption: '&autoCalculationOption',
+                ucDecimals: '&unitCostPrecision',
+                tcDecimals: '&totalCostPrecision',
+                ucUom: '&unitCostUom',
+                tcUom: '&totalCostUom'
             },            
             controller: function () {
                 this.calc = calculations;
 
 
                 function calculations() {
-                    if (autoCalcOption === 1) {
-                        calculateTotalCost();
-                    } else if (autoCalcOption === 2) {
-                        calculateUnitCost();
+                    if (this.autoCalcOption == 1) {
+                        calculateTotalCost(this);
+                    } else if (this.autoCalcOption == 2) {
+                        calculateUnitCost(this);
                     }
                 }
 
-                function calculateTotalCost() {
-                    tc = uc * qty;
+                function calculateTotalCost(currentScope) {
+                    currentScope.tc = currentScope.uc * currentScope.qty;
                 }
 
-                function calculateUnitCost() {
-                    uc = round(tc / qty, 2).toFixed(2);
+                function calculateUnitCost(currentScope) {
+                    currentScope.uc = round(currentScope.tc / currentScope.qty, 2).toFixed(2);
                 }
 
                 function round(value, decimals) {
