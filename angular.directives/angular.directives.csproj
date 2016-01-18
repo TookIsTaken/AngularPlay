@@ -59,6 +59,8 @@
   <ItemGroup>
     <Content Include="app\directives\standardCostTriplet\standard-cost-triplet.html" />
     <Content Include="app\directives\standardCostTriplet\standard-cost-triplet.js" />
+    <Content Include="app\services\rounding.js" />
+    <Content Include="app\services\tripletCalculations.js" />
     <Content Include="app\ucQtyTcTriplet\triplet.html" />
     <Content Include="app\ucQtyTcTriplet\triplet.js" />
     <Content Include="app\vendor.min.js" />

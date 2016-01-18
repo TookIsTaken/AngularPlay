@@ -10,10 +10,12 @@
         var vm = this;
         vm.costElements = buildPageData();
         vm.autoCalc = 2;
-        vm.unitCost = 3.45;
-        vm.qty = 4;
-        vm.tc = 13.80;
+        vm.ucUom = 2;
+        vm.tcUom = 2;
+        vm.ucPrecision = 2;
+        vm.tcPrecision = 3;
         vm.title = 'Triplet';
+        vm.warnings = { 'tripletCheck': false, 'qtyRequired': false, 'ucRequired': false };
         activate();
 
         function activate() {
@@ -35,6 +37,15 @@
 
 
             return costElements;
+        }
+
+        function addWarningsContainer(elements) {
+            var warnings = { 'tripletCheck': false, 'qtyRequired': false, 'ucRequired': false };
+
+            elements.elements.forEach(function (element) { element });
+
+            return elements;
+
         }
     }
 })();

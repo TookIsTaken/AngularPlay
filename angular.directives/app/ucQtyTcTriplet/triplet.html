@@ -13,7 +13,7 @@
                             </div>
                             <div class="col-lg-10">
                                 <div class="pull-left" ng-repeat="year in element.yearValues">
-                                    <standard-cost-triplet uc="year.uc" qty="year.qty" tc="year.tc" auto-calculation-option="{{vm.autoCalc}}">
+                                    <standard-cost-triplet uc="year.uc" qty="year.qty" tc="year.tc" auto-calculation-option="vm.autoCalc" unit-cost-precision="vm.ucPrecision" total-cost-precision="vm.tcPrecision" unit-cost-uom="vm.ucUom" total-cost-uom="vm.tcUom">
 </div>
                                 
                             </div>
@@ -23,6 +23,22 @@
                         <div class="clearfix"></div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
+                <label>UC Precision</label>
+                <input type="text" ng-model="vm.ucPrecision" />
+            </div>
+            <div class="row">
+                <label>TC Precision</label>
+                <input type="text" ng-model="vm.tcPrecision" />
+            </div>
+            <div class="row">
+                <label>UC UOM</label>
+                <input type="text" ng-model="vm.ucUom" />
+            </div>
+            <div class="row">
+                <label>TC UOM</label>
+                <input type="text" ng-model="vm.tcUom" />
             </div>
         </div>
     </section>
