@@ -23,7 +23,6 @@
                     if (this.autoCalcOption == 1) {
                         calculateTotalCost(this);
                     } else if (this.autoCalcOption == 2) {
-                        console.log('this worked!');
                         calculateUnitCost(this);
                     }
                 }
@@ -45,7 +44,7 @@
                         standardTrip.calc();
                 }, true);
                 scope.$watch('standardTrip.tcUom', function (newValue, oldValue) {
-                    if (newValu != oldValue)
+                    if (newValue != oldValue)
                         standardTrip.calc();
                 }, true);
 
