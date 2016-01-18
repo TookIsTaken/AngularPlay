@@ -1,0 +1,21 @@
+﻿{{standardTrip.autoCalcOption}}
+<div class="row">
+    <label class="control-label col-lg-4">Unit Cost:</label>
+
+    <div class="col-lg-4">
+        <input type="text" ng-model="standardTrip.uc" ng-model-options='{ debounce: 1000 }' />
+    </div>
+</div>
+<div class="row">
+
+    <label class="control-label col-lg-4">Quantity:</label>
+    <div class="col-lg-4">
+        <input type="text" ng-model="standardTrip.qty" ng-change="standardTrip.calc()" />
+    </div>
+</div>
+<div class="row">
+    <label class="control-label col-lg-4">Total Cost:</label>
+    <div class="col-lg-4">
+        <input type="text" ng-model="standardTrip.tc" />
+    </div>
+</div>

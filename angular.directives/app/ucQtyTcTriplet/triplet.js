@@ -14,34 +14,13 @@
         vm.qty = 4;
         vm.tc = 13.80;
         vm.title = 'Triplet';
-        vm.performCalculation = calculations;
         activate();
 
         function activate() {
             var promises = [];
             common.activateController(promises, controllerId)
                 .then(function () { log('Activated Dashboard View'); });
-        }
-
-        function calculations() {
-            if (vm.autoCalc === 1) {
-                calculateTotalCost();
-            } else if (vm.autoCalc === 2) {
-                calculateUnitCost();
-            }
-        }
-
-        function calculateTotalCost() {
-            vm.tc = vm.unitCost * vm.qty;
-        }
-
-        function calculateUnitCost() {
-            vm.unitCost = round(vm.tc / vm.qty, 2).toFixed(2);
-        }
-
-        function round(value, decimals) {
-            return Number(Math.round(value + 'e' + decimals) + 'e-' + decimals);
-        }
+        }       
 
 
         function buildPageData() {

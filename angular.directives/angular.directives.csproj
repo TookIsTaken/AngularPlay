@@ -57,6 +57,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\directives\standardCostTriplet\standard-cost-triplet.html" />
+    <Content Include="app\directives\standardCostTriplet\standard-cost-triplet.js" />
     <Content Include="app\ucQtyTcTriplet\triplet.html" />
     <Content Include="app\ucQtyTcTriplet\triplet.js" />
     <Content Include="app\vendor.min.js" />
