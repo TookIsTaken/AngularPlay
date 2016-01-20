@@ -1,0 +1,37 @@
+﻿<section class="mainbar" data-ng-controller="p5 as vm">
+    <section class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="widget wviolet">
+                    <div data-cc-widget-header title="{{vm.title}}"></div>
+                    <div class="widget-content user">
+                        <div class="row">
+                            <div class="col-lg-2" style="text-align:center; background-color:lightgray;">Nomenclature</div>
+
+                            
+                                <div class="col-lg-2" style="text-align:center; background-color:lightgray;">2015</div>
+                                <div class="col-lg-2" style="text-align:center; background-color:lightgray;">2016</div>
+                                <div class="col-lg-2" style="text-align:center; background-color:lightgray;">2017 Base</div>
+                                <div class="col-lg-2" style="text-align:center; background-color:lightgray;">2017 Oco</div>
+                                <div class="col-lg-2" style="text-align:center; background-color:lightgray;">2017 Total</div>
+
+                            
+                        </div>
+                        <div class="row" ng-repeat="element in vm.costElements">
+                            <div class="col-lg-2">
+                                <input type="text" ng-model="element.nomenclature" />
+                            </div>
+                                <div class="pull-left col-lg-2" ng-repeat="year in element.years">
+                                    <standard-cost-triplet uc="year.uc" qty="year.qty" tc="year.tc" auto-calculation-option="vm.autoCalc" unit-cost-precision="vm.ucPrecision" total-cost-precision="vm.tcPrecision" unit-cost-uom="vm.ucUom" total-cost-uom="vm.tcUom">
+                                </div>
+                            
+                        </div>
+                    </div>
+                    <div class="widget-foot">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

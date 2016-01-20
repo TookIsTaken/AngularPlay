@@ -49,6 +49,16 @@
                         content: '<i class="fa fa-dashboard"></i> Triplet'
                     }
                 }
+            }, {
+                url: '/p5',
+                config: {
+                    templateUrl: 'app/p5Form/p5.html',
+                    title: 'p5',
+                    settings: {
+                        nav: 4,
+                        content: '<i class="fa fa-dashboard"></i> P5 Form'
+                    }
+                }
             }
         ];
     }
