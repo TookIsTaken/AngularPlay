@@ -1,0 +1,5 @@
+﻿<div>
+    <ul>
+        <li ng-repeat="warning in warningsCtrl.warnings track by warning.id" ng-click="warningHeaderCtrl.highlightWarning(warning.id)">{{warning.text}}</li>
+    </ul>
+</div>

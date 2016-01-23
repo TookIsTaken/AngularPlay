@@ -61,6 +61,12 @@
     <Content Include="app\directives\baseOcoTriplet\base.oco.triplet.js" />
     <Content Include="app\directives\standardCostTriplet\standard-cost-triplet.html" />
     <Content Include="app\directives\standardCostTriplet\standard-cost-triplet.js" />
+    <Content Include="app\directives\warnings\tripletWarning\triplet.warning.js" />
+    <Content Include="app\directives\warnings\tripletWarning\triplet.warning.tc.js" />
+    <Content Include="app\directives\warnings\tripletWarning\triplet.warning.uc.js" />
+    <Content Include="app\directives\warnings\warningHeader\warning-header.html" />
+    <Content Include="app\directives\warnings\warningHeader\warning.header.js" />
+    <Content Include="app\directives\warnings\warningForm\warning.form.js" />
     <Content Include="app\p5Form\p5.html" />
     <Content Include="app\p5Form\p5.js" />
     <Content Include="app\services\p5Service.js" />
@@ -85,6 +91,7 @@
     <Content Include="index.html" />
     <Content Include="package.json" />
     <Content Include="packages.config" />
+    <Content Include="app\directives\warnings\tripletWarning\triplet.warning.qty.js" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

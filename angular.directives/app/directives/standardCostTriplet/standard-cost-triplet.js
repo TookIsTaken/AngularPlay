@@ -4,7 +4,7 @@
 
     angular.module('app').directive('standardCostTriplet', ['tripletCalculations', function (tripletCalc) {
         return {
-            restrict: 'E',
+            restrict: 'EA',
             scope: {
                 uc: '=',
                 qty: '=',

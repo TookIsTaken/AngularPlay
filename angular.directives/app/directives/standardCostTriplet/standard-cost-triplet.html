@@ -2,19 +2,19 @@
     <label class="text-right col-lg-5">Unit Cost:</label>
 
     <div class="col-lg-7">
-        <input type="text" ng-model="standardTrip.uc" ng-model-options='{ debounce: 1000 }' ng-change="standardTrip.calc()" />
+        <input type="text" ng-readonly="standardTrip.autoCalcOption == 2" ng-model="standardTrip.uc" triplet-warning-uc ng-model-options='{ debounce: 1000 }' ng-change="standardTrip.calc()" />
     </div>
 </div>
 <div class="row">
 
     <label class="text-right col-lg-5">Quantity:</label>
     <div class="col-lg-7">
-        <input type="text" ng-model="standardTrip.qty" ng-model-options='{ debounce: 1000 }' ng-change="standardTrip.calc()" />
+        <input type="text" ng-model="standardTrip.qty" triplet-warning-qty ng-model-options='{ debounce: 1000 }' ng-change="standardTrip.calc()" />
     </div>
 </div>
 <div class="row">
-    <label class="text-right col-lg-5 input-group">Total Cost:</label>
-    <div class="col-lg-7 input-group">
-        <input type="text" ng-model="standardTrip.tc" ng-model-options='{ debounce: 1000 }' ng-change="standardTrip.calc()" />
+    <label class="text-right col-lg-5">Total Cost:</label>
+    <div class="col-lg-7">
+        <input type="text" ng-readonly="standardTrip.autoCalcOption == 1" ng-model="standardTrip.tc" triplet-warning-tc ng-model-options='{ debounce: 1000 }' ng-change="standardTrip.calc()" />
     </div>
 </div>

@@ -19,7 +19,7 @@
         }
 
         function calcTc(qty, uc, currentUcUom, neededUom, neededPrecision) {
-            var tc = roundingServ.unRound(uc, currentucUom) * qty;
+            var tc = roundingServ.unRound(uc, currentUcUom) * qty;
             return roundingServ.round(tc, neededUom, neededPrecision);
         }
     }

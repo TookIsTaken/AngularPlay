@@ -5,6 +5,8 @@
                 <div class="widget wviolet">
                     <div data-cc-widget-header title="{{vm.title}}"></div>
                     <div class="widget-content user">
+                        <div warning-form>
+                        <div warning-header></div>
                         <div class="row">
                             <div class="col-lg-2" style="text-align:center; background-color:lightgray;">Nomenclature</div>
 
@@ -22,10 +24,11 @@
                                 <input type="text" ng-model="element.nomenclature" />
                             </div>
                                 <div class="pull-left col-lg-2" ng-repeat="year in element.years">
-                                    <standard-cost-triplet uc="year.uc" qty="year.qty" tc="year.tc" auto-calculation-option="vm.autoCalc" unit-cost-precision="vm.ucPrecision" total-cost-precision="vm.tcPrecision" unit-cost-uom="vm.ucUom" total-cost-uom="vm.tcUom">
+                                    <div standard-cost-triplet triplet-warning id="{{element.nomenclature + '_' + year.fy}}" uc="year.uc" qty="year.qty" tc="year.tc" auto-calculation-option="vm.settings.autoCalculation" unit-cost-precision="vm.settings.ucPrecision" total-cost-precision="vm.settings.tcPrecision" unit-cost-uom="vm.settings.ucUom" total-cost-uom="vm.settings.tcUom"></div>
                                 </div>
                             
                         </div>
+                            </div>
                     </div>
                     <div class="widget-foot">
                         <div class="clearfix"></div>

@@ -1270,6 +1270,9 @@ form {
     }
 
 /* Users ends */
-
+.pulse-twice {
+  animation: 0.5s pulse linear 2;
+  -webkit-animation: 0.5s pulse linear 2;
+}
 
 /*#endregion */
