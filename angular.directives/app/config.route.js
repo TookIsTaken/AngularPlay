@@ -59,6 +59,16 @@
                         content: '<i class="fa fa-dashboard"></i> P5 Form'
                     }
                 }
+            }, {
+                url: '/fyTable',
+                config: {
+                    templateUrl: 'app/fyTable/fy.table.html',
+                    title: 'fyTable',
+                    settings: {
+                        nav: 4,
+                        content: '<i class="fa fa-dashboard"></i> FY Table'
+                    }
+                }
             }
         ];
     }

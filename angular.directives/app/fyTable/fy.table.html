@@ -1,0 +1,96 @@
+﻿<section class="mainbar" data-ng-controller="fyTable as vm">
+    <section class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="widget wviolet">
+                    <div data-cc-widget-header title="{{vm.title}}"></div>
+                    <div class="widget-content user">
+                        <div warning-form>
+                            <div warning-header></div>
+                            
+                            <table class="table table-striped table-hover" >
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            FY 2
+                                        </th>
+                                        <th>
+                                            FY 3
+                                        </th>
+                                        <th>
+                                            FY 4 Base
+                                        </th>
+                                        <th>
+                                            FY 4 OCO
+                                        </th>
+                                        <th>
+                                            FY 4
+                                        </th>
+                                        <th>
+                                            FY 5
+                                        </th>
+                                        <th>
+                                            FY 6
+                                        </th>
+                                        <th>
+                                            FY 7
+                                        </th>
+                                        <th>
+                                            FY 8
+                                        </th>
+                                        <th>
+                                            To Complete
+                                        </th>
+                                        <th>
+                                            Total
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="rec in vm.costElements" ng-controller="fyDataRow as dataRow">
+                                        <td>
+                                            <input type="text" ng-model="rec.fy2" />
+                                        </td>
+                                        <td>
+                                            <input type="text" ng-model="rec.fy3" />
+                                        </td>
+                                        <td>
+                                            <input type="text" ng-model="rec.fy4Base" />
+                                        </td>
+                                        <td>
+                                            <input type="text" ng-model="rec.fy4Oco" />
+                                        </td>
+                                        <td>
+                                            {{dataRow.calculateFY4()}}
+                                        </td>
+                                        <td>
+                                            <input type="text" ng-model="rec.fy5" />
+                                        </td>
+                                        <td>
+                                            <input type="text" ng-model="rec.fy6" />
+                                        </td>
+                                        <td>
+                                            <input type="text" ng-model="rec.fy7" />
+                                        </td>
+                                        <td>
+                                            <input type="text" ng-model="rec.fy8" />
+                                        </td>
+                                        <td>
+                                            <input type="text" ng-model="rec.ToComplete" />
+                                        </td>
+                                        <td>
+                                            <input type="text" ng-model="rec.Total" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="widget-foot">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

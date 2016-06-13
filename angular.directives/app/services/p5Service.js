@@ -9,7 +9,8 @@
 
         var service = {
             getComponents: getComponents,
-            getSettings: getP5Settings
+            getSettings: getP5Settings,
+            getFyRecords: getFyRecords
         };
 
         return service;
@@ -18,6 +19,16 @@
             var settings = { ucUom: 1, tcUom: 1, ucPrecision: 2, tcPrecision: 3, autoCalculation: 1 }
 
             return $q.when(settings);
+        }
+
+        function getFyRecords() {
+            var records = [{ fy2: 1, fy3: 2, fy4Base: 3, fy4Oco: 4, fy4: 7, fy5: 1, fy6: 1, fy7: 1, fy8: 1, ToComplete: 1, Total: 18 },
+                { fy2: 1, fy3: 2, fy4Base: 3, fy4Oco: 4, fy4: 7, fy5: 1, fy6: 1, fy7: 1, fy8: 1, ToComplete: 1, Total: 18 },
+                { fy2: 1, fy3: 2, fy4Base: 3, fy4Oco: 4, fy4: 7, fy5: 1, fy6: 1, fy7: 1, fy8: 1, ToComplete: 1, Total: 18 },
+                { fy2: 1, fy3: 2, fy4Base: 3, fy4Oco: 4, fy4: 7, fy5: 1, fy6: 1, fy7: 1, fy8: 1, ToComplete: 1, Total: 18 }
+            ];
+
+            return $q.when(records);
         }
 
         function getComponents() {

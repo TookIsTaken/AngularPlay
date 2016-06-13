@@ -59,6 +59,8 @@
   <ItemGroup>
     <Content Include="app\directives\baseOcoTriplet\base-oco-triplet.html" />
     <Content Include="app\directives\baseOcoTriplet\base.oco.triplet.js" />
+    <Content Include="app\directives\fy-data-row\fy-data-row.js" />
+    <Content Include="app\directives\fy-data-row\fy.data.row.html" />
     <Content Include="app\directives\standardCostTriplet\standard-cost-triplet.html" />
     <Content Include="app\directives\standardCostTriplet\standard-cost-triplet.js" />
     <Content Include="app\directives\warnings\tripletWarning\triplet.warning.js" />
@@ -67,6 +69,8 @@
     <Content Include="app\directives\warnings\warningHeader\warning-header.html" />
     <Content Include="app\directives\warnings\warningHeader\warning.header.js" />
     <Content Include="app\directives\warnings\warningForm\warning.form.js" />
+    <Content Include="app\fyTable\fy-table.js" />
+    <Content Include="app\fyTable\fy.table.html" />
     <Content Include="app\p5Form\p5.html" />
     <Content Include="app\p5Form\p5.js" />
     <Content Include="app\services\p5Service.js" />
@@ -141,6 +145,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\FileModels\BlinRow.cs" />
+    <Compile Include="Service\FileModels\CurrentRow.cs" />
+    <Compile Include="Service\FileModels\HistoryRow.cs" />
+    <Compile Include="Service\FileModels\InitSparesRow.cs" />
+    <Compile Include="Service\FileModels\R1LineNumberRow.cs" />
+    <Compile Include="Service\FileReaders\CurrentReader.cs" />
+    <Compile Include="Service\Helpers\LineReader.cs" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
