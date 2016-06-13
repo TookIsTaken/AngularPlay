@@ -150,7 +150,11 @@
     <Compile Include="Service\FileModels\HistoryRow.cs" />
     <Compile Include="Service\FileModels\InitSparesRow.cs" />
     <Compile Include="Service\FileModels\R1LineNumberRow.cs" />
+    <Compile Include="Service\FileReaders\BlinReader.cs" />
     <Compile Include="Service\FileReaders\CurrentReader.cs" />
+    <Compile Include="Service\FileReaders\HistoryReader.cs" />
+    <Compile Include="Service\FileReaders\InitSparesReader.cs" />
+    <Compile Include="Service\FileReaders\R1LineNumberReader.cs" />
     <Compile Include="Service\Helpers\LineReader.cs" />
   </ItemGroup>
   <PropertyGroup>
